@@ -1,0 +1,18 @@
+.employee-details-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+}
+
+.EmployeeDetails {
+    text-align: -webkit-center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    margin: 20px;
+}
+
+.employees-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,53 @@
+.Header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: math;
+    padding-top: 30px;
+}
+
+.header {
+    padding-top: 30px;
+}
+
+
+.Header>.title-img {
+    opacity: 0.5;
+}
+
+.Header>.title-img:hover {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.northwind-img {
+    width: 400px;
+}
+
+
+
+.contact-FQA {
+    font-size: x-large;
+    text-align: right;
+
+}
+
+.contact-FQA>a {
+    background-color: rgba(149, 118, 167, 0.341);
+    border: none;
+    padding: 12px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+.contact-FQA>p {
+    font-size: small;
+
+}
+
+.contact-FQA>a:hover {
+    opacity: 1;
+}

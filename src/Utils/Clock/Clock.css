@@ -1,0 +1,10 @@
+.Clock {
+    text-align: left;
+    font-family: monospace;
+    padding-right: 70px;
+    color: rgba(70, 44, 85, 0.578);
+}
+
+.Clock>h1 {
+    font-size: smaller;
+}

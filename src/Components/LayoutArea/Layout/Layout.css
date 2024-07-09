@@ -1,0 +1,10 @@
+.Layout {
+    height: 100%;
+    display: grid;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.layout-header {
+    padding-top: 30px;
+}

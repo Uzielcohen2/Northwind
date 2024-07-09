@@ -1,0 +1,23 @@
+
+
+.supplier-card {
+    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    font-family: cursive;
+    transition: transform 0.3s, filter 0.3s;
+
+
+}
+
+.supplier-card:hover {
+    filter: none;
+    transform: scale(1.1);
+
+
+}
+
+.supplier-card-image{
+    border-radius: 13vh;
+}

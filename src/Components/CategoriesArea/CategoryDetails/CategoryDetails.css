@@ -1,0 +1,32 @@
+.CategoryDetails {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+.categories-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    width: 50vh;
+    font-family: cursive;
+
+}
+
+.cat-name {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: rgba(149, 118, 167, 0.341);
+    border-bottom: 2px solid #ccc;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

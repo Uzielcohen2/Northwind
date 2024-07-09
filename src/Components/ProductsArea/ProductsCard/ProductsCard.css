@@ -1,0 +1,53 @@
+/* Self - Title */
+.prod-card-name {
+    font-size: x-large;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: monospace;
+    -webkit-box-reflect: below 3px linear-gradient(transparent, #0005);
+    opacity: 0.7;
+}
+
+
+
+/* Product-Image */
+.products-card-details>img {
+    border-radius: 18rem;
+    padding: 30px;
+}
+
+/* Product-Card */
+.products-cards {
+    cursor: help;
+}
+
+
+
+.products-card-details p {
+    font-size: x-large;
+    margin: 10px 0;
+    inline-size: max-content;
+
+}
+
+
+
+/* Product Title */
+.prod-title {
+    text-align: center;
+    font-family: cursive;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+
+}
+
+/* Help Sentence */
+
+.text-details {
+    width: -webkit-fill-available;
+    border-radius: 18rem;
+    opacity: 0.6;
+    text-align-last: center;
+}

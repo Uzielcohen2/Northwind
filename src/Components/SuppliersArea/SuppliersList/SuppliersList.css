@@ -1,0 +1,40 @@
+.SuppliersList {
+    padding: 10px;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+    /* aspect-ratio: 3/2; */
+}
+
+.supplier-list>p {
+    font-family: cursive;
+    aspect-ratio: 3 / 2;
+
+}
+
+.sup-title {
+    text-align: center;
+    font-family: cursive;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.supplier-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+.MuiCardContent-root {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+}

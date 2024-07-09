@@ -1,0 +1,29 @@
+.suppliers-details {
+    text-align: -webkit-center;
+
+}
+
+.suppliers-details>h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: rgb(207, 109, 109);
+    font-family: cursive, arial;
+
+}
+
+.suppliers-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 50vh;
+    font-family: cursive;
+}
+
+*>p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    font-family: cursive, arial;
+}
