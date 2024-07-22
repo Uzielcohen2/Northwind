@@ -3,3 +3,10 @@
     box-shadow: rgba(10, 0, 0, 0.35) 0px -50px 35px -49px inset;
 
 }
+
+
+@media(max-width:620px) {
+    .category-image {
+        width: 25vh;
+    }
+}

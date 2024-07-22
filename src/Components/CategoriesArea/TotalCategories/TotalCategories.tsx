@@ -11,7 +11,7 @@ function TotalCategories(): JSX.Element {
     useEffect(() => {
         categoryService.getAllCategories()
             .then(cat => setCount(cat.length))
-            .catch(err => alert(err.message))
+            .catch(err => alert(err))
 
         const unsubscribe = categoryStore.subscribe(() => {
             setCount(categoryStore.getState().categories.length)

@@ -61,7 +61,7 @@
 .nav-icons {
     font-size: xx-large;
     padding-bottom: 40px;
-    display: table-cell;
+    display: inline-flex;
     gap: 20px;
     font-family: Garamond;
 }
@@ -134,6 +134,87 @@
 .social-qr {
     width: 70px;
     border-radius: 18rem;
+}
+
+@media(max-width:620px) {
+    .main-content .wrapper {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
 
 
+    .wrapper {
+        padding: 30px;
+    }
+
+    .my-card {
+        display: contents;
+    }
+
+    .nav-icons {
+        display: grid;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    }
+
+    .social-icons {
+        display: inline-flex;
+
+    }
+
+    .my-avatar {
+        justify-self: center;
+    }
+
+
+}
+
+@media(min-width:620px) and (max-width:1500px) {
+    .main-content .wrapper {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        display: ruby-text;
+    }
+
+    .my-card {
+        display: list-item;
+    }
+
+    .social-icons {
+        display: inline-flex;
+    }
+
+    .nav-icons {
+        display: ruby-text;
+        justify-items: center;
+        justify-content: space-around;
+        align-content: space-evenly;
+    }
+
+    .nav-icons>a {
+        display: ruby-text;
+    }
+}
+
+
+@media(min-width:620px) {
+
+    .nav-icons {
+        display: ruby-text;
+    }
+}
+
+
+@media(min-width:1500px) and (max-width:1620px) {
+    .nav-icons {
+        display: flex;
+    }
 }

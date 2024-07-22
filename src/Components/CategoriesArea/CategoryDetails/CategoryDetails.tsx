@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import CategoryModel from "../../../Models/CategoryModel";
-import { authStore } from "../../../Redux/AuthState";
 import categoryService from "../../../Service/CategoryService";
 import notificationService from "../../../Service/NotificationService";
 import appConfig from "../../../Utils/AppConfig";
@@ -35,13 +34,7 @@ function CategoryDetails(): JSX.Element {
     async function deleteCategory() {
         try {
 
-            // Token
-            const token = authStore.getState().token;
 
-            // Send token to axios build ->
-            const options = {
-                headers: { "Authorization": `Bearer ${token}` }
-            }
             const ok = window.confirm("Are you sure you wanna delete the category?");
             if (!ok) return
 
@@ -61,7 +54,7 @@ function CategoryDetails(): JSX.Element {
             {/* Navbar */}
             <NavBar />
             <h1 className="cat-name">{feCategory?.name}  </h1>
-            <img src={feCategory?.imageUrl} alt="" />
+            <img src={feCategory?.imageUrl} alt="" className="cat-detail-img" />
             <p>{feCategory?.description} </p>
 
             <div className="categories-buttons">

@@ -79,7 +79,7 @@
     align-content: center;
     align-items: center;
     font-family: fantasy;
-  
+
 
 }
 
@@ -92,4 +92,11 @@
     font-size: x-large;
     border: 1px dotted blueviolet;
     background-color: rgba(149, 118, 167, 0.341);
+}
+
+@media(max-width:620px) {
+    .ProductDetails {
+        font-size: small;
+        display: contents;
+    }
 }

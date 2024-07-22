@@ -1,7 +1,13 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import appConfig from "../../../Utils/AppConfig";
+import ContactUs from "../../AboutArea/ContactUs/ContactUs";
+import FAQ from "../../AboutArea/FAQ/FAQ";
+import Login from "../../AuthArea/Login/Login";
 import Register from "../../AuthArea/Register/Register";
+import AddCategory from "../../CategoriesArea/AddCategory/AddCategory";
 import CategoriesList from "../../CategoriesArea/CategoriesList/CategoriesList";
+import CategoryDetails from "../../CategoriesArea/CategoryDetails/CategoryDetails";
+import EditCategory from "../../CategoriesArea/EditCategory/EditCategory";
 import AddEmployee from "../../EmployeesArea/AddEmployee/AddEmployee";
 import EditEmployee from "../../EmployeesArea/EditEmployee/EditEmployee";
 import EmployeeDetails from "../../EmployeesArea/EmployeeDetails/EmployeeDetails";
@@ -11,14 +17,10 @@ import EditProduct from "../../ProductsArea/EditProduct/EditProduct";
 import ProductDetails from "../../ProductsArea/ProductDetails/ProductDetails";
 import ProductsList from "../../ProductsArea/ProductsList/ProductsList";
 import AddSupplier from "../../SuppliersArea/AddSupplier/AddSupplier";
+import EditSupplier from "../../SuppliersArea/EditSupplier/EditSupplier";
 import SuppliersDetails from "../../SuppliersArea/SuppliersDetails/SuppliersDetails";
 import SuppliersList from "../../SuppliersArea/SuppliersList/SuppliersList";
 import MainContent from "../MainContent/MainContent";
-import EditSupplier from "../../SuppliersArea/EditSupplier/EditSupplier";
-import Login from "../../AuthArea/Login/Login";
-import CategoryDetails from "../../CategoriesArea/CategoryDetails/CategoryDetails";
-import EditCategory from "../../CategoriesArea/EditCategory/EditCategory";
-import AddCategory from "../../CategoriesArea/AddCategory/AddCategory";
 import ProtectedRoute from "./ProtectedRoutes";
 
 
@@ -31,6 +33,13 @@ function Routing(): JSX.Element {
                 <Route path="/home" element={<MainContent />} />
                 {/* ******************************************************************************************************************************** */}
 
+                {/*--------------------------------------------- About Route------------------------------------------------------------------------- */}
+
+                {/* FAQ ROUTE  */}
+                <Route path="/FAQ" element={<FAQ />} />
+                {/* Contact Us */}
+                <Route path="/contact-us" element={<ContactUs />} />
+                {/* ******************************************************************************************************************************** */}
 
 
                 {/*--------------------------------------------- Suppliers Route-------------------------------------------------------------------- */}

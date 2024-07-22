@@ -46,6 +46,14 @@ class AppConfig {
 
     // --------------------------------------------------------------------------------------------
 
+    // Contact-us
+    public contactRoute: string = "/contact-us"
+    public readonly contactUrl: string = "http://localhost:3030/api/contact-us"
+    // FAQ 
+    public FAQ:string = "/FAQ"
+    // --------------------------------------------------------------------------------------------
+
+
 
 }
 const appConfig = new AppConfig();

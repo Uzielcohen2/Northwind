@@ -1,12 +1,12 @@
-import { NavLink, useNavigate } from "react-router-dom";
-import "./AddCategory.css";
+import { Button } from "@mui/material";
 import { useForm } from "react-hook-form";
+import { NavLink, useNavigate } from "react-router-dom";
 import CategoryModel from "../../../Models/CategoryModel";
 import categoryService from "../../../Service/CategoryService";
 import notificationService from "../../../Service/NotificationService";
-import NavBar from "../../../Utils/NavBar/NavBar";
-import { Button } from "@mui/material";
 import appConfig from "../../../Utils/AppConfig";
+import NavBar from "../../../Utils/NavBar/NavBar";
+import "./AddCategory.css";
 
 function AddCategory(): JSX.Element {
     // Navigator
@@ -27,7 +27,7 @@ function AddCategory(): JSX.Element {
             notificationService.success("Your Category added successfully")
             navigate("/categories/details/" + beCategory.id)
         } catch (err: any) {
-            notificationService.error(err.message)
+            notificationService.error(err)
         }
     }
 

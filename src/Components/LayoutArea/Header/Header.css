@@ -4,9 +4,6 @@
     padding-top: 30px;
 }
 
-.header {
-    padding-top: 30px;
-}
 
 
 .Header>.title-img {
@@ -27,6 +24,7 @@
 .contact-FQA {
     font-size: x-large;
     text-align: right;
+    padding-bottom: 20px;
 
 }
 
@@ -50,4 +48,37 @@
 
 .contact-FQA>a:hover {
     opacity: 1;
+}
+
+/* RESPONSIVE AREA */
+
+@media(max-width:620px) {
+    .contact-FQA {
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+    }
+
+    .contact-FQA>a {
+        align-self: start;
+    }
+}
+
+
+@media(min-width:620px) and (max-width:1600px) {
+    .contact-FQA {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        gap: 20px;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+@media(min-width:670px) {
+    .mobile-nav {
+        display: none;
+    }
 }

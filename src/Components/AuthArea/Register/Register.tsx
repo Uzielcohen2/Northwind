@@ -5,9 +5,9 @@ import UserModel from "../../../Models/UserModel";
 import authService from "../../../Service/AuthService";
 import notificationService from "../../../Service/NotificationService";
 import appConfig from "../../../Utils/AppConfig";
+import NavBar from "../../../Utils/NavBar/NavBar";
 import PasswordInput from "../PasswordInput/PasswordInput";
 import "./Register.css";
-import NavBar from "../../../Utils/NavBar/NavBar";
 
 function Register(): JSX.Element {
 

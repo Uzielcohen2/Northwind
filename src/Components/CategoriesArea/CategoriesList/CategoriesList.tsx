@@ -19,7 +19,7 @@ function CategoriesList(): JSX.Element {
                 SetFeCategory(beCategories);
                 if (!beCategories) return
             })
-            .catch(err => notificationService.error(err.message))
+            .catch(err => notificationService.error(err))
 
     }, [])
 

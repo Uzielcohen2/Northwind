@@ -29,7 +29,7 @@ function EditCategory(): JSX.Element {
                 setValue("description", cat.description);
                 setValue("imageUrl", cat.imageUrl);
             })
-            .catch(err => notificationService.error(err.message))
+            .catch(err => notificationService.error(err))
     }, []);
 
     // UPDATE FUNCTION
@@ -49,7 +49,7 @@ function EditCategory(): JSX.Element {
             navigate("/categories/details/" + beCategory.id)
 
         } catch (err: any) {
-            notificationService.error(err.message)
+            notificationService.error(err)
         }
     }
 

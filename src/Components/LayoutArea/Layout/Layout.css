@@ -8,3 +8,16 @@
 .layout-header {
     padding-top: 30px;
 }
+
+
+@media(max-width:620px) {
+    .Layout {
+        overflow: hidden;
+    }
+}
+
+@media(min-width:620px) and (max-width:1300px) {
+    .Layout {
+        overflow: hidden;
+    }
+}

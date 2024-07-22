@@ -30,3 +30,21 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+
+@media(max-width:600px) {
+    .categories-buttons {
+        display: grid;
+  
+        gap: 20px;
+        font-family: cursive;
+    }
+
+    .cat-name {
+        display: flex;
+    }
+
+    .cat-detail-img {
+        width: min-content;
+    }
+}

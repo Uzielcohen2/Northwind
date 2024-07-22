@@ -32,3 +32,24 @@
     width: 120px;
     padding-top: 40px;
 }
+
+@media(max-width:620px) {
+    .ProductsList {
+        display: grid;
+    }
+
+    .prod-title {
+        align-items: flex-start;
+    }
+
+}
+
+
+@media(min-width:620px) and (max-width:1600px) {
+    .ProductsList {
+        display: flex;
+        align-items: baseline;
+       
+    }
+
+}

@@ -14,20 +14,24 @@ import Signature from "../../../assets/images/signature.png";
 import "./MainContent.css";
 
 
+
 function MainContent(): JSX.Element {
+
+
+
     return (
-        <div className="main-content">
+        <div className="main-content" >
 
             <div className="wrapper">
                 {/* My Card */}
 
                 <div className="my-avatar">
                     {/* My picture */}
-                 
-                        <img src={MyPic} alt="Avatar" className='flip-box-inner' />
-                 
+
+                    <img src={MyPic} alt="Avatar" className='flip-box-inner' />
+
                     <div className="flip-box-back">
-                    <br />
+                        <br />
                         <p>Thanks for visiting</p>
                     </div>
                     <br />
@@ -58,11 +62,11 @@ function MainContent(): JSX.Element {
                             <br />
 
                             {/* Linkedin */}
-                            <p><SocialIcon url="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F" /></p>
+                            <p><SocialIcon url="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F" /></p> <p><img src={FaceQR} className='social-qr' /></p>
                             <br />
 
                             {/* WhatsApp */}
-                            <p><SocialIcon url="https://www.whatsapp.com/" /></p>
+                            <p><SocialIcon url="https://www.whatsapp.com/" /></p> <p><img src={FaceQR} className='social-qr' /></p>
                         </div>
                     </div>
 
@@ -80,13 +84,11 @@ function MainContent(): JSX.Element {
 
                         {/* NavBar */}
                         <div className="nav-icons">
-                            {/* Home */}
-                            <RoofingIcon /> <NavLink to="/home">Home</NavLink>
+                    
                             {/* Suppliers */}
                             <AdjustIcon />  <NavLink to="/suppliers">Our Suppliers</NavLink>
                             {/* Employees */}
                             <PeopleIcon /> <NavLink to="/employees">Our Employees</NavLink>
-                            <br /><br />
                             {/* Products */}
                             <StoreIcon /> <NavLink to="/products">Our Products</NavLink>
                             {/* Categories */}

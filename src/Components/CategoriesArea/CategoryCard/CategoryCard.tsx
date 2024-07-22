@@ -26,7 +26,7 @@ function CategoryCard(props: CategoryProps): JSX.Element {
             <div key={props.category.id} className="categories-cards">
 
                 <h4>{props.category.name}</h4>
-                <img src={props.category.imageUrl} alt='CategoryImage'></img>
+                <img src={props.category.imageUrl} className="category-image" alt='CategoryImage'></img>
                 <p>{props.category.description}</p>
                
 

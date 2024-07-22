@@ -30,7 +30,7 @@ function AddEmployee(): JSX.Element {
             navigate("/employees/details/" + beEmployee.id)
 
         } catch (err: any) {
-            notificationService.error(err.message)
+            notificationService.error(err)
         }
     }
 

@@ -1,13 +1,14 @@
-import { NavLink } from "react-router-dom";
-import "./AuthMenu.css";
 import { useEffect, useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import UserModel from "../../../Models/UserModel";
-import authService from "../../../Service/AuthService";
 import { authStore } from "../../../Redux/AuthState";
-import { unsubscribe } from "diagnostics_channel";
+import authService from "../../../Service/AuthService";
 import notificationService from "../../../Service/NotificationService";
+import appConfig from "../../../Utils/AppConfig";
+import "./AuthMenu.css";
 
 function AuthMenu(): JSX.Element {
+    const navigate = useNavigate();
 
     const [user, setUser] = useState<UserModel>();
 
@@ -23,7 +24,9 @@ function AuthMenu(): JSX.Element {
 
     function logoutMe(): void {
         authService.logout();
-        notificationService.success("Bye Bye , Hope we will see you soon 🤟")
+        notificationService.success("Bye Bye , Hope we will see you soon 🤟");
+        navigate(appConfig.HomeRoute)
+
     }
     return (
         <div className="AuthMenu">

@@ -35,3 +35,11 @@
     font-family: cursive;
     font-weight: bold;
 }
+
+
+@media(max-width:800px) {
+    .CategoriesList{
+        display: grid;
+        justify-items: start; 
+    }
+}

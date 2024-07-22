@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { NavLink, useNavigate } from "react-router-dom";
 import CredentialsModel from "../../../Models/CredentialsModel";
@@ -6,12 +7,15 @@ import notificationService from "../../../Service/NotificationService";
 import appConfig from "../../../Utils/AppConfig";
 import NavBar from "../../../Utils/NavBar/NavBar";
 import "./Login.css";
-import { Button } from "@mui/material";
+import PasswordInput from "../PasswordInput/PasswordInput";
 
 function Login(): JSX.Element {
 
     const { handleSubmit, register } = useForm<CredentialsModel>();
     const navigate = useNavigate();
+
+
+
 
 
     // Function
@@ -52,7 +56,7 @@ function Login(): JSX.Element {
                 <label>Password : </label>
                 <input type="password" {...register("password")} />
 
-
+  
                 <button type="submit">Login</button>
                 <Button>
                     <NavLink to={appConfig.HomeRoute} >Go Back</NavLink>

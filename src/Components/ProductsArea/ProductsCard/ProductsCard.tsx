@@ -39,7 +39,7 @@ function ProductsCard(props: ProductsProps): JSX.Element {
                         <div className="products-card-details">
 
                             {/* Image */}
-                            <img src={props.product.imageUrl} alt="imageUrl" />
+                            <img src={props.product.imageUrl} alt="imageUrl" className="prod-image"/>
 
                             {/* Text */}
                             <div className="text-details">

@@ -1,5 +1,4 @@
-import { Avatar, Button, List, ListItem, ListItemAvatar, ListItemText, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import SupplierModel from "../../../Models/SupplierModel";
 import notificationService from "../../../Service/NotificationService";
@@ -83,7 +82,10 @@ function SuppliersDetails(): JSX.Element {
                 {/* Buttons */}
                 <div className="suppliers-buttons">
                     {/* Back */}
-                    <NavLink to="/suppliers">Back</NavLink>
+                    <a>
+                                 <NavLink to="/suppliers">Back</NavLink>
+                    </a>
+           
                     {/* Edit */}
                     <NavLink to={appConfig.supplierEditRoute + id}>Edit</NavLink>
                     {/* Delete */}

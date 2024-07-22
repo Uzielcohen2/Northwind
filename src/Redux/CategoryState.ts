@@ -39,6 +39,7 @@ function categoryReducer(currentState = new CategoryState(), action: CategoryAct
             // Delete Category
             const indexToDelete = newState.categories.findIndex(c => c.id === action.payload.id);
             newState.categories.splice(indexToDelete, 1);
+            break;
         // Clear All
         case CategoryActionTypes.ClearAll:
             newState.categories = [];
