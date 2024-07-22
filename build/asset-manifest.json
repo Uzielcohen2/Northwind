@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Northwind/static/css/main.5016e6d4.css",
+    "main.js": "/Northwind/static/js/main.8f18821c.js",
+    "static/media/instaQR.png": "/Northwind/static/media/instaQR.c98de1a3c14a6696608f.png",
+    "static/media/FaceQr.png": "/Northwind/static/media/FaceQr.6c4c71651403a7179aaf.png",
+    "static/media/Spin@1x-1.0s-200px-200px.gif": "/Northwind/static/media/Spin@1x-1.0s-200px-200px.07211d66294f2164e32d.gif",
+    "static/media/LOGO-removebg-preview.png": "/Northwind/static/media/LOGO-removebg-preview.f1679e499e42a44b59c9.png",
+    "static/media/clear.png": "/Northwind/static/media/clear.c05b5999f4fe3cfcb089.png",
+    "static/media/Uziel AVATAR.jpg": "/Northwind/static/media/Uziel AVATAR.3553528acd453237a5ba.jpg",
+    "index.html": "/Northwind/index.html",
+    "main.5016e6d4.css.map": "/Northwind/static/css/main.5016e6d4.css.map",
+    "main.8f18821c.js.map": "/Northwind/static/js/main.8f18821c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5016e6d4.css",
+    "static/js/main.8f18821c.js"
+  ]
+}
